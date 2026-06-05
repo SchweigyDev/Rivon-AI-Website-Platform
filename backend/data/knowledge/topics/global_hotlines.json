@@ -1,0 +1,23 @@
+[
+  {
+    "id": "crisis_hotline_global",
+    "topic": "global_hotlines",
+    "keywords": [
+      "international hotline",
+      "global crisis",
+      "other country",
+      "hotline"
+    ],
+    "response": "🌍 Here are trusted international crisis numbers:\n🇨🇦 Canada – 1-833-456-4566\n🇬🇧 UK – 116 123\n🇦🇺 Australia – 13 11 14\n🇮🇳 India – 91-9820466726\n🌐 More countries: https://findahelpline.com",
+    "intent": "provide_hotline_list",
+    "tone": "calm",
+    "emotion": "supportive",
+    "context_tags": [
+      "safety",
+      "international"
+    ],
+    "semantic_hooks": {
+      "suspend_gpt": true
+    }
+  }
+]

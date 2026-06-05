@@ -1,0 +1,287 @@
+[
+  {
+    "id": "rivon_overview_001",
+    "topic": "rivon_overview",
+    "keywords": [
+      "what do you do",
+      "what does rivon do",
+      "what is rivon",
+      "about rivon",
+      "what can you do",
+      "what are you",
+      "who are you"
+    ],
+    "response": "Rivon builds modern websites, landing pages, ecommerce sites, and AI chatbots. We focus on clean design, smart automation, and personalization so your site actually converts visitors into customers.",
+    "intent": "company_info",
+    "emotion": "confident",
+    "context_tags": ["rivon", "overview"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["business_type"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains what Rivon does at a high level.",
+    "connected_responses": [
+      {
+        "text": "Are you thinking about a full website, a landing page, or something ecommerce?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      },
+      {
+        "text": "If you tell me what kind of business this is for, I’ll suggest the best setup.",
+        "intent": "offer_help",
+        "emotion": "supportive"
+      }
+    ]
+  },
+  {
+    "id": "rivon_landing_pages_001",
+    "topic": "rivon_landing_pages",
+    "keywords": [
+      "landing page",
+      "landing pages",
+      "one page site",
+      "one pager",
+      "sales page",
+      "funnel",
+      "link in bio",
+      "campaign page"
+    ],
+    "response": "Yes — Rivon builds high-converting landing pages. These are focused, single-goal pages designed to drive signups, bookings, or sales fast.",
+    "intent": "service_info",
+    "emotion": "professional",
+    "context_tags": ["landing_pages"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["site_goal"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains Rivon landing page services.",
+    "connected_responses": [
+      {
+        "text": "What’s the main action you want visitors to take on the landing page?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      },
+      {
+        "text": "Landing pages are great when you want speed and clarity instead of a full site.",
+        "intent": "inform_user",
+        "emotion": "neutral"
+      }
+    ]
+  },
+  {
+    "id": "rivon_landing_page_pricing_001",
+    "topic": "rivon_landing_page_pricing",
+    "keywords": [
+      "landing page price",
+      "landing page cost",
+      "how much is a landing page",
+      "price for a landing page",
+      "cost of landing page"
+    ],
+    "response": "Landing pages typically range from $500 to $2,000 depending on design depth, copywriting, integrations, and whether you want an AI chatbot or personalization included.",
+    "intent": "pricing_info",
+    "emotion": "transparent",
+    "context_tags": ["pricing", "landing_pages"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["budget_range"],
+      "decay_after": 48,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains landing page pricing.",
+    "connected_responses": [
+      {
+        "text": "Is this for a product launch, service, or personal brand?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  },
+  {
+    "id": "rivon_website_building_001",
+    "topic": "rivon_websites",
+    "keywords": [
+      "website",
+      "build a website",
+      "new website",
+      "full site",
+      "business website",
+      "company website",
+      "modern website"
+    ],
+    "response": "Rivon builds full business websites — not just pages, but complete systems. That includes homepage, services or shop pages, contact, and smart AI features that help visitors take action.",
+    "intent": "service_info",
+    "emotion": "confident",
+    "context_tags": ["websites"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["business_type"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains Rivon full website builds.",
+    "connected_responses": [
+      {
+        "text": "Is this site mainly for leads, sales, bookings, or a mix?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  },
+  {
+    "id": "rivon_ecommerce_001",
+    "topic": "rivon_ecommerce",
+    "keywords": [
+      "ecommerce",
+      "online store",
+      "sell online",
+      "checkout",
+      "shop",
+      "products",
+      "cart"
+    ],
+    "response": "Yes — Rivon builds ecommerce sites with clean product pages, categories, checkout flows, and AI chatbots that help customers find and choose products.",
+    "intent": "service_info",
+    "emotion": "professional",
+    "context_tags": ["ecommerce"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["product_count"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains Rivon ecommerce capabilities.",
+    "connected_responses": [
+      {
+        "text": "Roughly how many products are you planning to sell?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  },
+  {
+    "id": "rivon_chatbots_001",
+    "topic": "rivon_chatbots",
+    "keywords": [
+      "chatbot",
+      "chatbots",
+      "ai chatbot",
+      "assistant",
+      "ai assistant",
+      "website bot",
+      "site chatbot"
+    ],
+    "response": "Rivon chatbots handle FAQs, guide visitors, capture leads, recommend products, and adapt responses based on what users care about — not just canned replies.",
+    "intent": "service_info",
+    "emotion": "confident",
+    "context_tags": ["chatbots"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["personalization"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains Rivon chatbot functionality.",
+    "connected_responses": [
+      {
+        "text": "Do you want the chatbot focused more on support, sales, or both?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  },
+  {
+    "id": "rivon_personalization_001",
+    "topic": "rivon_personalization",
+    "keywords": [
+      "personalization",
+      "personalized",
+      "recommendations",
+      "smart offers",
+      "custom experience",
+      "tailored"
+    ],
+    "response": "Rivon uses personalization to change messaging, offers, and chatbot behavior based on visitor intent — which usually leads to higher conversions.",
+    "intent": "service_info",
+    "emotion": "professional",
+    "context_tags": ["personalization"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["personalization"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains Rivon personalization features.",
+    "connected_responses": [
+      {
+        "text": "Would you want personalization right away, or add it later?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  },
+  {
+    "id": "rivon_pricing_overview_001",
+    "topic": "rivon_pricing",
+    "keywords": [
+      "pricing",
+      "plans",
+      "packages",
+      "tiers",
+      "cost",
+      "how much"
+    ],
+    "response": "Rivon offers three main tiers: Basic, Standard, and Premium. Basic is best for simple sites or landing pages, Standard adds deeper AI and automation, and Premium is for full custom systems.",
+    "intent": "pricing_info",
+    "emotion": "neutral",
+    "context_tags": ["pricing"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["budget_range"],
+      "decay_after": 48,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains Rivon pricing tiers.",
+    "connected_responses": [
+      {
+        "text": "Do you already have a budget range in mind?",
+        "intent": "ask_question",
+        "emotion": "neutral"
+      }
+    ]
+  },
+  {
+    "id": "rivon_unsure_001",
+    "topic": "rivon_unsure",
+    "keywords": [
+      "not sure",
+      "i don't know",
+      "dont know",
+      "unsure",
+      "no idea",
+      "help me decide"
+    ],
+    "response": "Totally fair — most people don’t start with a clear plan. That’s actually what Rivon is best at: turning rough ideas into a clean site structure.",
+    "intent": "reassure_user",
+    "emotion": "friendly",
+    "context_tags": ["guidance"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["business_type"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Handles users who are unsure what they want.",
+    "connected_responses": [
+      {
+        "text": "What kind of business or project is this for?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "rivon_obj_wix_001",
+    "topic": "rivon_objection_templates",
+    "keywords": ["wix", "squarespace", "template", "theme", "site builder"],
+    "response": "Those can be great for getting online fast. Rivon is for when you want the site to feel premium *and* work like a system — clear structure, conversion-focused sections, and an AI assistant that adapts to what visitors ask.",
+    "intent": "objection_handling",
+    "emotion": "calm",
+    "context_tags": ["rivon", "objection"],
+    "memory_flags": { "store_topic": true, "entities": ["business_type"], "decay_after": 72, "memory_level": "session" },
+    "semantic_summary": "Handles 'why not Wix/Squarespace' calmly and clearly.",
+    "connected_responses": [
+      { "text": "What kind of business is your site for?", "intent": "ask_question", "emotion": "curious", "context_tags": ["qualification"] },
+      { "text": "Do you care more about looking premium, getting leads, or launching quickly?", "intent": "ask_question", "emotion": "curious", "context_tags": ["qualification"] }
+    ]
+  },
+  {
+    "id": "rivon_obj_not_ready_001",
+    "topic": "rivon_objection_not_ready",
+    "keywords": ["not ready", "later", "not now", "someday", "eventually", "maybe later"],
+    "response": "No pressure. If you want, I can still generate a one-page site plan right now so when you’re ready, you’re not starting from zero.",
+    "intent": "objection_handling",
+    "emotion": "supportive",
+    "context_tags": ["rivon", "objection"],
+    "memory_flags": { "store_topic": true, "entities": ["business_type", "site_goal"], "decay_after": 48, "memory_level": "session" },
+    "semantic_summary": "Handles 'not ready' and offers value without pushing.",
+    "connected_responses": [
+      { "text": "What kind of business is it?", "intent": "ask_question", "emotion": "curious", "context_tags": ["qualification"] },
+      { "text": "What would you want the website to accomplish first?", "intent": "ask_question", "emotion": "curious", "context_tags": ["qualification"] }
+    ]
+  }
+]

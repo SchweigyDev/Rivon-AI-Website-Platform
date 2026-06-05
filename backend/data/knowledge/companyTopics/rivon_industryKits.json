@@ -1,0 +1,32 @@
+[
+  {
+    "id": "rivon_industry_events_001",
+    "topic": "rivon_industry_events",
+    "keywords": ["events", "party", "dj", "photo booth", "entertainment", "mobile fun business"],
+    "response": "For an events/entertainment business, the fastest ‘wow’ site is usually: Home + Packages + Gallery + FAQ + Contact. The Rivon chatbot can answer availability questions and guide people to the right package.",
+    "intent": "industry_personalization",
+    "emotion": "confident",
+    "context_tags": ["rivon", "industry"],
+    "memory_flags": { "store_topic": true, "entities": ["business_type"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Suggests pages and bot behavior for events/entertainment businesses.",
+    "connected_responses": [
+      { "text": "Do you want people to book instantly, request a quote, or message you first?", "intent": "ask_question", "emotion": "curious", "context_tags": ["cta"] },
+      { "text": "Do you already have photos/videos for a gallery, or should we plan that too?", "intent": "ask_question", "emotion": "curious", "context_tags": ["content"] }
+    ]
+  },
+  {
+    "id": "rivon_industry_local_service_001",
+    "topic": "rivon_industry_local_service",
+    "keywords": ["plumber", "hvac", "electrician", "roof", "contractor", "repair", "local service"],
+    "response": "For a local service business, the highest-converting setup is: Home + Services + Service Areas + Reviews + Contact. The Rivon assistant can route visitors to the right service and capture quote requests.",
+    "intent": "industry_personalization",
+    "emotion": "professional",
+    "context_tags": ["rivon", "industry"],
+    "memory_flags": { "store_topic": true, "entities": ["business_type"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Suggests pages and chatbot flow for local service companies.",
+    "connected_responses": [
+      { "text": "What service do you want to be known for first?", "intent": "ask_question", "emotion": "curious", "context_tags": ["positioning"] },
+      { "text": "Do you want calls, form leads, or both?", "intent": "ask_question", "emotion": "curious", "context_tags": ["cta"] }
+    ]
+  }
+]

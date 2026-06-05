@@ -1,0 +1,27 @@
+Knowledge Base Category Report
+Generated: 10/17/2025, 12:53:54 PM
+───────────────────────────────────────────
+connected_greetings_part1 → 310
+connected_farewells       → 291
+personal_growth           → 100
+response_to_reactions     → 100
+daily_life                → 99
+relationships             → 99
+entertainment             → 98
+response_to_angry_users   → 98
+career_advice             → 97
+learning                  → 97
+technology                → 97
+mindfulness               → 96
+philosophy_wisdom         → 95
+general_knowledge         → 95
+world_culture             → 95
+american_sports           → 94
+curiosity                 → 93
+science_facts             → 91
+crisis_safety             → 1
+global_hotlines           → 1
+safety                    → 1
+───────────────────────────────────────────
+Total Entries: 2148
+Unique Topics: 21

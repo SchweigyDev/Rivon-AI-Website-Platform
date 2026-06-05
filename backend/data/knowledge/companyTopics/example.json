@@ -1,0 +1,203 @@
+{
+  "id": "company_intro_example_001_0b1a00",
+  "topic": "company_overview",
+  "keywords": [
+    "company",
+    "site",
+    "website",
+    "page",
+    "services",
+    "pricing",
+    "contact",
+    "support",
+    "about"
+  ],
+  "response": "This site is a demo version of the SmartChatbot platform 🤖. It’s designed to show how easily a bot can learn about any company once connected to its JSON file.",
+  "intent": "describe_company",
+  "tone": "friendly",
+  "emotion": "informative",
+  "context_tags": [
+    "company_intro",
+    "site_information"
+  ],
+  "memory_flags": {
+    "store_topic": true,
+    "entities": [
+      "company_name",
+      "company_focus",
+      "user_interest"
+    ],
+    "decay_after": 24,
+    "memory_level": "session"
+  },
+  "semantic_summary": "Explains that this chatbot can be adapted to represent any company's site.",
+  "connected_responses": [
+    {
+      "text": "It’s built to adapt to each client’s brand and site data automatically.",
+      "intent": "explain_feature",
+      "emotion": "professional",
+      "context_tags": ["company_intro", "product_capability"],
+      "expected_user_replies": ["how", "really", "interesting"],
+      "next_responses": [
+        {
+          "text": "Yep! Each client’s bot loads its own companyTopics JSON file.",
+          "intent": "technical_detail",
+          "emotion": "friendly"
+        },
+        {
+          "text": "That means setup takes minutes, not weeks 🚀",
+          "intent": "highlight_benefit",
+          "emotion": "enthusiastic"
+        }
+      ]
+    },
+    {
+      "text": "It currently runs in demo mode without a live company file connected.",
+      "intent": "state_condition",
+      "emotion": "neutral",
+      "context_tags": ["company_intro", "demo_mode"],
+      "expected_user_replies": ["oh", "so it's demo", "makes sense"],
+      "next_responses": [
+        {
+          "text": "Once a client file is added, I’ll know everything about their site.",
+          "intent": "future_ready",
+          "emotion": "informative"
+        },
+        {
+          "text": "That’s how I’ll handle real product and support questions soon.",
+          "intent": "future_ready",
+          "emotion": "optimistic"
+        }
+      ]
+    },
+    {
+      "text": "Would you like me to explain how it connects to a real company site?",
+      "intent": "offer_help",
+      "emotion": "friendly",
+      "context_tags": ["company_intro", "connection_help"],
+      "expected_user_replies": ["yes", "sure", "tell me"],
+      "next_responses": [
+        {
+          "text": "It reads from a companyTopics JSON file stored under /data/knowledge.",
+          "intent": "technical_detail",
+          "emotion": "professional"
+        },
+        {
+          "text": "That file includes company name, services, FAQs, and custom responses.",
+          "intent": "explain_feature",
+          "emotion": "friendly"
+        }
+      ]
+    },
+    {
+      "text": "Each bot you sell will have its own companyTopics folder.",
+      "intent": "educate",
+      "emotion": "professional",
+      "context_tags": ["company_intro", "deployment"],
+      "expected_user_replies": ["ok", "nice", "makes sense"],
+      "next_responses": [
+        {
+          "text": "So no company data overlaps — every bot stays unique 🧩",
+          "intent": "assure_privacy",
+          "emotion": "reassuring"
+        },
+        {
+          "text": "That keeps client data completely separated and secure 🔒",
+          "intent": "assure_privacy",
+          "emotion": "professional"
+        }
+      ]
+    },
+    {
+      "text": "When a real site file is connected, I’ll describe their team, services, and contact info.",
+      "intent": "describe_future",
+      "emotion": "optimistic",
+      "context_tags": ["company_intro", "future_features"],
+      "expected_user_replies": ["great", "nice", "cool"],
+      "next_responses": [
+        {
+          "text": "That’s what makes me fully brand-adaptable 🤖",
+          "intent": "highlight_benefit",
+          "emotion": "friendly"
+        },
+        {
+          "text": "Each site’s tone can even be customized — friendly, formal, or playful.",
+          "intent": "explain_customization",
+          "emotion": "informative"
+        }
+      ]
+    },
+    {
+      "text": "Would you like a short example of what I’d say for a real client?",
+      "intent": "ask_question",
+      "emotion": "curious",
+      "context_tags": ["company_intro", "demo_prompt"],
+      "expected_user_replies": ["yes", "sure", "why not"],
+      "next_responses": [
+        {
+          "text": "For example: 'Welcome to 4Serve — your local chef-made meal platform 🍽️'",
+          "intent": "demo_reply",
+          "emotion": "friendly"
+        },
+        {
+          "text": "That’s just a mockup of what I’d say once linked to a site.json.",
+          "intent": "clarify",
+          "emotion": "neutral"
+        }
+      ]
+    },
+    {
+      "text": "Once a site file is linked, I can also handle FAQs and support requests.",
+      "intent": "describe_capability",
+      "emotion": "informative",
+      "context_tags": ["company_intro", "faq_support"],
+      "expected_user_replies": ["ok", "cool", "that’s great"],
+      "next_responses": [
+        {
+          "text": "So customers get fast, on-brand answers 24/7.",
+          "intent": "benefit_explanation",
+          "emotion": "professional"
+        },
+        {
+          "text": "And you won’t need to retrain me — just upload the new file.",
+          "intent": "highlight_efficiency",
+          "emotion": "enthusiastic"
+        }
+      ]
+    },
+    {
+      "text": "Would you like to learn how I’m customized per client?",
+      "intent": "ask_question",
+      "emotion": "curious",
+      "context_tags": ["company_intro", "client_customization"],
+      "expected_user_replies": ["yes", "tell me", "how"],
+      "next_responses": [
+        {
+          "text": "Each bot loads its own logic and companyTopics folder during setup.",
+          "intent": "explain_process",
+          "emotion": "professional"
+        },
+        {
+          "text": "That’s what lets me talk about each client’s services accurately.",
+          "intent": "clarify",
+          "emotion": "friendly"
+        }
+      ]
+    }
+  ],
+  "transitions": [
+    { "if_user_mentions": ["pricing"], "go_to_topic": "company_pricing" },
+    { "if_user_mentions": ["services"], "go_to_topic": "company_services" },
+    { "if_user_mentions": ["support"], "go_to_topic": "company_support" }
+  ],
+  "emotion_hooks": {
+    "on_user_positive": ["reinforce_positive", "offer_help"],
+    "on_user_negative": ["acknowledge_feelings"],
+    "on_user_neutral": ["ask_question"]
+  },
+  "semantic_hooks": {
+    "update_memory": ["recent_topic", "conversation_depth"],
+    "retrieve_context": ["previous_company_interest"]
+  }
+}
+

@@ -1,0 +1,27 @@
+/* global.css */
+
+/* Reset basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Prevent horizontal scroll */
+html, body {
+    overflow-x: hidden;
+    font-family: sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+/* Optional smooth scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Links default style */
+a {
+    text-decoration: none;
+    color: inherit;
+}

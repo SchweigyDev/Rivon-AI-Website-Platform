@@ -1,0 +1,305 @@
+[
+  {
+    "id": "safety_001_773743",
+    "topic": "safety",
+    "keywords": [
+      "suicide",
+      "kill myself",
+      "want to die",
+      "end my life",
+      "self harm",
+      "hurt myself",
+      "can't go on",
+      "i don't want to live",
+      "life isn't worth it",
+      "die",
+      "i wish i was gone",
+      "no reason to live",
+      "i'm done",
+      "give up on life",
+      "want to disappear forever"
+    ],
+    "response": "💙 I’m really sorry that you’re feeling this way, but I want you to know you’re not alone. You matter more than you realize. If you are in danger or thinking about ending your life, please reach out for immediate help. You can call or text **988** — the Suicide and Crisis Lifeline — right now. They’re available **24/7, free, and confidential**. If you’re outside the U.S., I can help you find international hotlines too. You don’t have to face this alone. 💙",
+    "intent": "acknowledge_user",
+    "tone": "neutral",
+    "emotion": "neutral",
+    "context_tags": [
+      "safety"
+    ],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": [
+        "user_name",
+        "mood",
+        "topic_interest"
+      ],
+      "decay_after": 12,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Bot responds about safety with a neutral and neutral tone.",
+    "connected_responses": [
+      {
+        "text": "That’s interesting — tell me more about it!",
+        "intent": "express_gratitude",
+        "emotion": "curious",
+        "context_tags": [
+          "safety",
+          "conversation_followup"
+        ],
+        "expected_user_replies": [
+          "yes",
+          "no",
+          "maybe"
+        ],
+        "next_responses": [
+          {
+            "text": "I appreciate that perspective 🙌",
+            "intent": "farewell_user",
+            "emotion": "personal"
+          },
+          {
+            "text": "Good point — I hadn’t thought of it like that.",
+            "intent": "express_gratitude",
+            "emotion": "professional"
+          }
+        ]
+      },
+      {
+        "text": "I’d love to hear more details!",
+        "intent": "ask_question",
+        "emotion": "empathetic",
+        "context_tags": [
+          "safety",
+          "conversation_followup"
+        ],
+        "expected_user_replies": [
+          "sure",
+          "why not",
+          "not really"
+        ],
+        "next_responses": [
+          {
+            "text": "That’s a smart way to look at it!",
+            "intent": "greet_user",
+            "emotion": "friendly"
+          },
+          {
+            "text": "That’s totally fair 👍",
+            "intent": "continue_smalltalk",
+            "emotion": "professional"
+          }
+        ]
+      },
+      {
+        "text": "Hmm, intriguing thought 🤔",
+        "intent": "motivate_user",
+        "emotion": "empathetic",
+        "context_tags": [
+          "safety",
+          "conversation_followup"
+        ],
+        "expected_user_replies": [
+          "sure",
+          "why not",
+          "not really"
+        ],
+        "next_responses": [
+          {
+            "text": "That’s a smart way to look at it!",
+            "intent": "ask_question",
+            "emotion": "friendly"
+          },
+          {
+            "text": "Good point — I hadn’t thought of it like that.",
+            "intent": "offer_help",
+            "emotion": "professional"
+          }
+        ]
+      },
+      {
+        "text": "Can you expand on that a bit?",
+        "intent": "ask_question",
+        "emotion": "friendly",
+        "context_tags": [
+          "safety",
+          "conversation_followup"
+        ],
+        "expected_user_replies": [
+          "sure",
+          "why not",
+          "not really"
+        ],
+        "next_responses": [
+          {
+            "text": "I appreciate that perspective 🙌",
+            "intent": "acknowledge_user",
+            "emotion": "enlightened"
+          },
+          {
+            "text": "Makes sense when you put it that way.",
+            "intent": "motivate_user",
+            "emotion": "neutral"
+          }
+        ]
+      },
+      {
+        "text": "I totally get that — go on!",
+        "intent": "continue_smalltalk",
+        "emotion": "empathetic",
+        "context_tags": [
+          "safety",
+          "conversation_followup"
+        ],
+        "expected_user_replies": [
+          "sure",
+          "why not",
+          "not really"
+        ],
+        "next_responses": [
+          {
+            "text": "I appreciate that perspective 🙌",
+            "intent": "continue_smalltalk",
+            "emotion": "enlightened"
+          },
+          {
+            "text": "Good point — I hadn’t thought of it like that.",
+            "intent": "farewell_user",
+            "emotion": "neutral"
+          }
+        ]
+      },
+      {
+        "text": "I totally get that — go on!",
+        "intent": "continue_smalltalk",
+        "emotion": "curious",
+        "context_tags": [
+          "safety",
+          "conversation_followup"
+        ],
+        "expected_user_replies": [
+          "interesting",
+          "tell me more",
+          "okay"
+        ],
+        "next_responses": [
+          {
+            "text": "I appreciate that perspective 🙌",
+            "intent": "express_gratitude",
+            "emotion": "enlightened"
+          },
+          {
+            "text": "Makes sense when you put it that way.",
+            "intent": "acknowledge_user",
+            "emotion": "professional"
+          }
+        ]
+      },
+      {
+        "text": "I totally get that — go on!",
+        "intent": "motivate_user",
+        "emotion": "neutral",
+        "context_tags": [
+          "safety",
+          "conversation_followup"
+        ],
+        "expected_user_replies": [
+          "sure",
+          "why not",
+          "not really"
+        ],
+        "next_responses": [
+          {
+            "text": "Fascinating! You’ve got a unique way of thinking.",
+            "intent": "greet_user",
+            "emotion": "friendly"
+          },
+          {
+            "text": "Good point — I hadn’t thought of it like that.",
+            "intent": "acknowledge_user",
+            "emotion": "neutral"
+          }
+        ]
+      },
+      {
+        "text": "Sounds like there’s more to it!",
+        "intent": "give_information",
+        "emotion": "empathetic",
+        "context_tags": [
+          "safety",
+          "conversation_followup"
+        ],
+        "expected_user_replies": [
+          "interesting",
+          "tell me more",
+          "okay"
+        ],
+        "next_responses": [
+          {
+            "text": "Fascinating! You’ve got a unique way of thinking.",
+            "intent": "continue_smalltalk",
+            "emotion": "personal"
+          },
+          {
+            "text": "Makes sense when you put it that way.",
+            "intent": "acknowledge_user",
+            "emotion": "neutral"
+          }
+        ]
+      }
+    ],
+    "transitions": [
+      {
+        "if_user_mentions": [
+          "help",
+          "support"
+        ],
+        "go_to_topic": "support"
+      },
+      {
+        "if_user_mentions": [
+          "price",
+          "plan"
+        ],
+        "go_to_topic": "pricing"
+      },
+      {
+        "if_user_mentions": [
+          "learn",
+          "study"
+        ],
+        "go_to_topic": "learning"
+      },
+      {
+        "if_user_mentions": [
+          "sad",
+          "angry"
+        ],
+        "go_to_topic": "mindfulness"
+      }
+    ],
+    "emotion_hooks": {
+      "on_user_positive": [
+        "continue_smalltalk",
+        "reinforce_positive"
+      ],
+      "on_user_negative": [
+        "offer_support",
+        "acknowledge_feelings"
+      ],
+      "on_user_neutral": [
+        "ask_question"
+      ]
+    },
+    "semantic_hooks": {
+      "update_memory": [
+        "user_mood",
+        "recent_topic",
+        "conversation_depth"
+      ],
+      "retrieve_context": [
+        "previous_mood",
+        "stored_entities"
+      ]
+    }
+  }
+]

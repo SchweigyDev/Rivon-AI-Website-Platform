@@ -1,0 +1,632 @@
+[
+  {
+    "id": "rivon_templates_001",
+    "topic": "rivon_templates",
+    "keywords": ["templates", "template", "examples", "example sites", "what templates", "show templates", "template section"],
+    "response": "Rivon can start from polished templates *or* build fully custom. Templates are great for speed — then we customize layout, copy, and AI behavior so it still feels uniquely yours.",
+    "intent": "company_info",
+    "emotion": "confident",
+    "context_tags": ["rivon", "templates"],
+    "memory_flags": { "store_topic": true, "entities": ["business_type", "style_preference"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Explains Rivon templates vs custom approach.",
+    "connected_responses": [
+      { "text": "Do you want something fast from a template, or fully custom from scratch?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What vibe should your site feel like: premium, playful, bold, or minimal?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_homepage_copy_001",
+    "topic": "rivon_homepage_copy",
+    "keywords": ["write my homepage", "homepage copy", "headline", "tagline", "what should my homepage say", "home page text"],
+    "response": "Yes — if you tell me what you do and who you serve, I can draft a strong homepage headline, subheadline, and 3 key sections that explain your offer clearly.",
+    "intent": "offer_help",
+    "emotion": "supportive",
+    "context_tags": ["rivon", "copywriting"],
+    "memory_flags": { "store_topic": true, "entities": ["business_type", "audience", "offer"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Offers to generate homepage copy from business details.",
+    "connected_responses": [
+      { "text": "What do you sell/do in one sentence?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Who is your ideal customer (and what do they want most)?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_pages_needed_001",
+    "topic": "rivon_pages_needed",
+    "keywords": ["what pages do i need", "pages should i have", "website pages", "site map", "sitemap", "what sections"],
+    "response": "Most strong sites follow a simple pattern: Home (value + proof), Services/Offer, About (trust), and Contact (action). Then add Pricing, Gallery/Portfolio, FAQ, or Booking depending on your business.",
+    "intent": "planning_help",
+    "emotion": "professional",
+    "context_tags": ["rivon", "planning"],
+    "memory_flags": { "store_topic": true, "entities": ["business_type", "site_goal"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Recommends common pages and when to add extras.",
+    "connected_responses": [
+      { "text": "What kind of business is it, and what’s the main goal (leads/bookings/sales)?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Do you need pricing and booking, or is contact-first better for you?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_timeline_001",
+    "topic": "rivon_timeline",
+    "keywords": ["how fast", "timeline", "how long", "when can it be done", "launch time", "deadline"],
+    "response": "Timeline depends on scope: a clean Basic site can be quick, while Standard/Premium takes longer due to content, pages, and AI behaviors. If you tell me your deadline and what you need, I’ll suggest the fastest realistic path.",
+    "intent": "process_info",
+    "emotion": "professional",
+    "context_tags": ["rivon", "timeline"],
+    "memory_flags": { "store_topic": true, "entities": ["deadline", "scope"], "decay_after": 72, "memory_level": "session" },
+    "semantic_summary": "Explains timeline depends on scope and asks for deadline.",
+    "connected_responses": [
+      { "text": "Do you have a deadline date you’re aiming for?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "How many pages/features do you need (simple, lead-gen, booking, e-commerce)?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_maintenance_001",
+    "topic": "rivon_maintenance",
+    "keywords": ["maintenance", "updates", "who updates it", "ongoing", "support", "after launch", "change text later"],
+    "response": "After launch, you can keep it simple (occasional edits) or go ongoing (content, optimization, improvements). Either way, Rivon is built so updates don’t break the site.",
+    "intent": "process_info",
+    "emotion": "supportive",
+    "context_tags": ["rivon", "maintenance"],
+    "memory_flags": { "store_topic": true, "entities": ["maintenance_preference"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Explains post-launch maintenance options.",
+    "connected_responses": [
+      { "text": "Do you prefer a one-time build or ongoing optimization and updates?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Will you be updating content often (events, products, blogs), or rarely?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_hosting_domain_001",
+    "topic": "rivon_hosting_domain",
+    "keywords": ["hosting", "domain", "do you host", "buy a domain", "where is it hosted", "ssl"],
+    "response": "We can help you set up hosting and your domain so it’s secure and stable (SSL, fast delivery, good structure). If you already have a domain, we can usually keep it.",
+    "intent": "faq",
+    "emotion": "professional",
+    "context_tags": ["rivon", "hosting", "domain"],
+    "memory_flags": { "store_topic": true, "entities": ["has_domain"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Explains domain/hosting support and keeping existing domain.",
+    "connected_responses": [
+      { "text": "Do you already own a domain name?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Is the site mainly informational, lead-gen, or e-commerce?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_integrations_001",
+    "topic": "rivon_integrations",
+    "keywords": ["integrations", "connect", "crm", "email marketing", "mailchimp", "hubspot", "calendar", "booking", "stripe"],
+    "response": "Yes — Rivon sites can connect to common tools (forms, email lists, booking calendars, payments). The best setup depends on what you want visitors to do after they land on your site.",
+    "intent": "feature_explain",
+    "emotion": "professional",
+    "context_tags": ["rivon", "integrations"],
+    "memory_flags": { "store_topic": true, "entities": ["integration_needs"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Explains common integrations and asks user goal.",
+    "connected_responses": [
+      { "text": "Do you want bookings, quotes, email signups, or payments as the main action?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What tools do you already use (CRM, email, calendar)?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_lead_capture_001",
+    "topic": "rivon_lead_capture",
+    "keywords": ["lead capture", "get leads", "capture leads", "forms", "contact form", "collect info", "inquiries"],
+    "response": "Rivon can capture leads through forms *and* through the chatbot (guided questions). That means visitors don’t just bounce — they get guided into a clear next step.",
+    "intent": "feature_explain",
+    "emotion": "confident",
+    "context_tags": ["rivon", "leads"],
+    "memory_flags": { "store_topic": true, "entities": ["lead_goal"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Explains lead capture via forms and chatbot.",
+    "connected_responses": [
+      { "text": "Do you want quick contact leads, or detailed leads (budget, timeline, needs)?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What’s the best next step for your leads: call, email, quote request, or booking?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_chatbot_qualify_001",
+    "topic": "rivon_chatbot_qualify",
+    "keywords": ["qualify leads", "lead qualification", "screen leads", "questions before contact", "pre qualify"],
+    "response": "Yes — the chatbot can qualify leads by asking a few smart questions and saving the answers (like goal, budget range, or timeline) before handing off to a person.",
+    "intent": "feature_explain",
+    "emotion": "professional",
+    "context_tags": ["rivon", "chatbot", "leads"],
+    "memory_flags": { "store_topic": true, "entities": ["qualification_fields"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Chatbot can qualify leads with structured questions.",
+    "connected_responses": [
+      { "text": "What questions would you want it to ask before someone contacts you?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Should it hand off to a form, email, or a booking link?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_contact_methods_001",
+    "topic": "rivon_contact_methods",
+    "keywords": ["talk to a person", "contact", "email", "phone", "call", "book a call", "meeting"],
+    "response": "You can reach a person through the contact section, and we can also support a “book a call” flow if you prefer scheduling. If you tell me your preference, I’ll guide you to the cleanest next step.",
+    "intent": "handoff",
+    "emotion": "supportive",
+    "context_tags": ["rivon", "contact", "handoff"],
+    "memory_flags": { "store_topic": true, "entities": ["contact_preference"], "decay_after": 72, "memory_level": "session" },
+    "semantic_summary": "Explains ways to talk to a person and booking options.",
+    "connected_responses": [
+      { "text": "Do you prefer email follow-up or scheduling a quick call?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What are you trying to build so I can route you to the right place?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_competition_001",
+    "topic": "rivon_competition",
+    "keywords": ["competition", "other agencies", "why better", "what makes you different", "better than", "unique"],
+    "response": "Rivon is designed to feel premium *and* intelligent: clean structure, strong messaging, and an assistant that adapts to real visitor questions. It’s not just design — it’s a usable system that guides people.",
+    "intent": "differentiation",
+    "emotion": "confident",
+    "context_tags": ["rivon", "differentiation"],
+    "memory_flags": { "store_topic": true, "entities": ["priority"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Differentiation: premium + intelligent site system.",
+    "connected_responses": [
+      { "text": "What matters most to you: premium look, speed to launch, or maximizing leads?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What kind of business is this for?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_i_dont_know_002",
+    "topic": "rivon_uncertainty_2",
+    "keywords": ["i dont know", "i'm lost", "no idea", "help me", "not sure", "confused", "where do i start"],
+    "response": "No worries — I can guide it. Start with: what do you do, who do you serve, and what do you want visitors to do next. From that, I can generate a clean site plan.",
+    "intent": "guided_planning",
+    "emotion": "supportive",
+    "context_tags": ["rivon", "planning"],
+    "memory_flags": { "store_topic": true, "entities": ["business_type", "audience", "site_goal"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Guides user through basic planning questions when unsure.",
+    "connected_responses": [
+      { "text": "What do you do in one sentence?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What’s the main goal: leads, bookings, sales, or awareness?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_existing_site_migration_001",
+    "topic": "rivon_migration",
+    "keywords": ["migrate", "move my site", "transfer", "switch platforms", "wordpress", "webflow", "old site"],
+    "response": "Yes — we can often migrate content and structure, then modernize design and performance. The first step is figuring out what to keep (pages/content) and what to improve (message, layout, speed, conversions).",
+    "intent": "site_upgrade",
+    "emotion": "professional",
+    "context_tags": ["rivon", "migration"],
+    "memory_flags": { "store_topic": true, "entities": ["current_platform"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Explains migration and modernization approach.",
+    "connected_responses": [
+      { "text": "What platform is your current site on (WordPress, Wix, etc.)?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What’s the biggest issue with the current site: looks, speed, or leads?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_portfolio_001",
+    "topic": "rivon_portfolio",
+    "keywords": ["portfolio", "gallery", "examples", "work samples", "show work", "case studies"],
+    "response": "A portfolio/gallery section is one of the fastest trust builders. Rivon can structure it so visitors instantly understand what you do, what the results look like, and how to take the next step.",
+    "intent": "planning_help",
+    "emotion": "confident",
+    "context_tags": ["rivon", "portfolio"],
+    "memory_flags": { "store_topic": true, "entities": ["portfolio_assets"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Explains portfolio section benefits and structure.",
+    "connected_responses": [
+      { "text": "Do you already have photos/videos/testimonials for a gallery?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Would you want the portfolio organized by category, service, or results?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_testimonials_001",
+    "topic": "rivon_testimonials",
+    "keywords": ["testimonials", "reviews", "proof", "social proof", "trust", "ratings"],
+    "response": "Reviews and proof are huge for conversions. Rivon can build a testimonials section that feels premium and makes trust obvious without being braggy.",
+    "intent": "planning_help",
+    "emotion": "professional",
+    "context_tags": ["rivon", "trust"],
+    "memory_flags": { "store_topic": true, "entities": ["reviews_available"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Highlights testimonials as conversion drivers.",
+    "connected_responses": [
+      { "text": "Do you already have reviews (Google, Facebook, screenshots), or should we plan to collect them?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Would you rather show short quotes or longer story-style testimonials?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_security_001",
+    "topic": "rivon_security",
+    "keywords": ["secure", "security", "safe", "privacy", "data", "gdpr", "compliance"],
+    "response": "Security matters. Rivon sites are set up with modern best practices (HTTPS/SSL, safe forms, and clean structure). If you collect sensitive info, we’ll plan the right approach.",
+    "intent": "faq",
+    "emotion": "professional",
+    "context_tags": ["rivon", "security"],
+    "memory_flags": { "store_topic": true, "entities": ["data_type"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Explains security basics and asks about sensitive data.",
+    "connected_responses": [
+      { "text": "Will you collect any sensitive info, or is it just basic contact details?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Do you need logins/members-only areas, or public pages only?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_analytics_001",
+    "topic": "rivon_analytics",
+    "keywords": ["analytics", "track", "tracking", "metrics", "google analytics", "measure", "conversions"],
+    "response": "Yes — Rivon can set up tracking so you can see what visitors do (clicks, form submissions, bookings). That’s how you improve the site over time instead of guessing.",
+    "intent": "feature_explain",
+    "emotion": "professional",
+    "context_tags": ["rivon", "analytics"],
+    "memory_flags": { "store_topic": true, "entities": ["conversion_goal"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Explains analytics and conversion tracking.",
+    "connected_responses": [
+      { "text": "What’s your main conversion: calls, forms, bookings, or purchases?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Do you want simple reporting or deeper optimization suggestions?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_booking_001",
+    "topic": "rivon_booking",
+    "keywords": ["booking", "appointments", "schedule", "calendar", "availability", "book online"],
+    "response": "Booking flows can be built right into the site. The chatbot can also help by asking a few questions first and then sending people to the right booking option.",
+    "intent": "feature_explain",
+    "emotion": "confident",
+    "context_tags": ["rivon", "booking"],
+    "memory_flags": { "store_topic": true, "entities": ["booking_type"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Explains booking support and chatbot-assisted routing.",
+    "connected_responses": [
+      { "text": "Are you booking calls, appointments, or event dates?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Do you want the bot to collect details before booking?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_blog_001",
+    "topic": "rivon_blog",
+    "keywords": ["blog", "posts", "content", "articles", "write blogs", "blog automation"],
+    "response": "A blog can help with SEO and trust, but only if it’s structured and consistent. Rivon can set up the blog layout and help you keep content organized so it supports your business instead of becoming noise.",
+    "intent": "feature_explain",
+    "emotion": "professional",
+    "context_tags": ["rivon", "blog"],
+    "memory_flags": { "store_topic": true, "entities": ["content_topic"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Explains blog value and structured approach.",
+    "connected_responses": [
+      { "text": "Do you want the blog mainly for SEO, education, or updates/news?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What topics do your customers ask about most?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_branding_001",
+    "topic": "rivon_branding",
+    "keywords": ["branding", "logo", "colors", "fonts", "design vibe", "look and feel", "style"],
+    "response": "Design matters. Rivon can match your branding (logo/colors/fonts) or help you define a clean “look system” so the site feels consistent and premium across every page.",
+    "intent": "planning_help",
+    "emotion": "professional",
+    "context_tags": ["rivon", "design"],
+    "memory_flags": { "store_topic": true, "entities": ["brand_assets"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Explains branding alignment and design system approach.",
+    "connected_responses": [
+      { "text": "Do you already have a logo and brand colors?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Should the site feel more futuristic, minimal, bold, or playful?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_revisions_001",
+    "topic": "rivon_revisions",
+    "keywords": ["revisions", "changes", "edits", "how many edits", "iterations", "feedback"],
+    "response": "Revisions are normal — the goal is to iterate until it feels right and communicates clearly. Rivon focuses on clarity first, then polish, so changes stay clean instead of chaotic.",
+    "intent": "process_info",
+    "emotion": "supportive",
+    "context_tags": ["rivon", "process"],
+    "memory_flags": { "store_topic": true, "entities": ["revision_preference"], "decay_after": 96, "memory_level": "session" },
+    "semantic_summary": "Explains revision approach focused on clarity then polish.",
+    "connected_responses": [
+      { "text": "Do you prefer fast iterations or fewer bigger review cycles?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Is your priority clarity, premium visuals, or conversion flow?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_ownership_001",
+    "topic": "rivon_ownership",
+    "keywords": ["do i own the site", "ownership", "who owns it", "my content", "can i move it later"],
+    "response": "You should always feel in control of your site and content. Rivon builds with clean structure so you’re not trapped — the site is meant to be maintainable and upgradeable.",
+    "intent": "faq",
+    "emotion": "professional",
+    "context_tags": ["rivon", "ownership"],
+    "memory_flags": { "store_topic": true, "entities": [], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Reassures about ownership and maintainability.",
+    "connected_responses": [
+      { "text": "Are you starting from scratch or moving an existing site?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Do you want a simple site you rarely update, or something you’ll evolve over time?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_multilingual_001",
+    "topic": "rivon_multilingual",
+    "keywords": ["spanish", "multilingual", "two languages", "bilingual", "translate", "language options"],
+    "response": "Yes — sites can be built with multiple languages if you need them. The best approach depends on how many pages and how often content changes.",
+    "intent": "feature_explain",
+    "emotion": "professional",
+    "context_tags": ["rivon", "multilingual"],
+    "memory_flags": { "store_topic": true, "entities": ["languages"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Explains multilingual support and scope factors.",
+    "connected_responses": [
+      { "text": "Which languages do you need, and is it for the full site or just key pages?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Will the content change often, or mostly stay the same?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_accessibility_001",
+    "topic": "rivon_accessibility",
+    "keywords": ["accessibility", "ada", "readable", "contrast", "disabled users", "screen readers"],
+    "response": "Accessibility is a quality marker. Rivon design can follow solid practices like readable structure, good contrast, and clean navigation so the site works well for more people.",
+    "intent": "faq",
+    "emotion": "professional",
+    "context_tags": ["rivon", "accessibility"],
+    "memory_flags": { "store_topic": true, "entities": [], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Explains accessibility-focused design practices.",
+    "connected_responses": [
+      { "text": "Do you have any accessibility requirements you already know about?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Is your audience mostly mobile users or desktop users?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_performance_001",
+    "topic": "rivon_performance",
+    "keywords": ["fast", "performance", "slow site", "load speed", "page speed", "core web vitals"],
+    "response": "Speed matters for trust and conversions. Rivon sites are structured to load quickly and stay smooth on mobile — especially important if you’re running ads or relying on search traffic.",
+    "intent": "feature_explain",
+    "emotion": "confident",
+    "context_tags": ["rivon", "performance"],
+    "memory_flags": { "store_topic": true, "entities": ["traffic_source"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Explains why performance matters and Rivon focus on speed.",
+    "connected_responses": [
+      { "text": "Are most visitors coming from ads, social media, or Google search?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Is your current site slow, or are you building new?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_mobile_first_001",
+    "topic": "rivon_mobile_first",
+    "keywords": ["mobile", "phone", "mobile friendly", "responsive", "works on iphone", "android"],
+    "response": "Yes — Rivon is built to be mobile-first. Most people decide in seconds on a phone, so the layout and calls-to-action are designed to feel clear and effortless on small screens.",
+    "intent": "company_info",
+    "emotion": "confident",
+    "context_tags": ["rivon", "mobile"],
+    "memory_flags": { "store_topic": true, "entities": ["audience_device"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Explains mobile-first approach for fast decisions.",
+    "connected_responses": [
+      { "text": "Do most of your customers find you on mobile?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What action should be easiest on mobile: call, book, or message?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_ai_memory_001",
+    "topic": "rivon_ai_memory",
+    "keywords": ["remember", "memory", "does it remember", "can it store", "can it save info", "remember my company"],
+    "response": "It can remember key details during the chat (like business type, goals, and preferences) so the conversation stays coherent. We can also set up controlled saving for leads/info if you want that.",
+    "intent": "feature_explain",
+    "emotion": "professional",
+    "context_tags": ["rivon", "ai", "memory"],
+    "memory_flags": { "store_topic": true, "entities": ["company_name", "site_goal"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Explains session memory and optional controlled saving.",
+    "connected_responses": [
+      { "text": "What should the bot remember: business name, services, goals, or all three?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Should it save lead info (email) only if the user offers it?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_support_handoff_001",
+    "topic": "rivon_support_handoff",
+    "keywords": ["handoff", "talk to human", "human support", "agent", "transfer", "contact team"],
+    "response": "We can design the chatbot to be helpful first, then hand off cleanly when needed — like collecting the key details and then sending the visitor to contact/booking.",
+    "intent": "handoff",
+    "emotion": "supportive",
+    "context_tags": ["rivon", "handoff"],
+    "memory_flags": { "store_topic": true, "entities": ["handoff_preference"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Explains clean handoff behavior for chatbot.",
+    "connected_responses": [
+      { "text": "When should it hand off: immediately, after a few questions, or only on request?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What info should it collect before handoff (budget, timeline, needs)?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_services_copy_001",
+    "topic": "rivon_services_copy",
+    "keywords": ["write my services", "services section", "service descriptions", "how should i describe my services", "service copy"],
+    "response": "Yes — I can turn what you do into clean service cards: what it is, who it’s for, and the outcome. That usually makes the site feel instantly more premium and understandable.",
+    "intent": "offer_help",
+    "emotion": "supportive",
+    "context_tags": ["rivon", "copywriting", "services"],
+    "memory_flags": { "store_topic": true, "entities": ["services_list"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Offers to generate service card copy from user business info.",
+    "connected_responses": [
+      { "text": "List your top 3 services (even rough wording is fine).", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What outcome do customers want most from you?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_funnel_help_001",
+    "topic": "rivon_funnel_help",
+    "keywords": ["sales funnel", "convert", "conversions", "turn visitors into customers", "cta", "call to action"],
+    "response": "A great site is a clear path: visitor lands, understands the offer fast, sees proof, then takes action. Rivon structures sections to guide that path instead of leaving people guessing.",
+    "intent": "planning_help",
+    "emotion": "confident",
+    "context_tags": ["rivon", "conversion"],
+    "memory_flags": { "store_topic": true, "entities": ["conversion_goal"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Explains conversion path: clarity, proof, action.",
+    "connected_responses": [
+      { "text": "What should the main action be: call, form, booking, or purchase?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What’s the biggest hesitation customers have before buying from you?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_pricing_clarity_001",
+    "topic": "rivon_pricing_clarity",
+    "keywords": ["basic", "standard", "premium", "difference between plans", "compare plans", "what's included"],
+    "response": "Basic is great for a clean premium site fast. Standard adds smarter AI behavior and stronger structure. Premium is for advanced flows and deeper automation. If you tell me what you need (pages + features), I’ll point to the best match.",
+    "intent": "pricing_info",
+    "emotion": "professional",
+    "context_tags": ["rivon", "pricing", "plans"],
+    "memory_flags": { "store_topic": true, "entities": ["scope", "features_needed"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Explains the plan differences at a high level.",
+    "connected_responses": [
+      { "text": "Do you need bookings/payments/e-commerce, or mostly informational + lead-gen?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "How many pages do you think you’ll need?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_ecommerce_detail_001",
+    "topic": "rivon_ecommerce_detail",
+    "keywords": ["sell products", "store", "shop", "cart", "checkout", "inventory", "shipping", "variants"],
+    "response": "E-commerce is doable — the best route depends on whether you need a full catalog (inventory/shipping/variants) or a simpler checkout (a few products or payment links).",
+    "intent": "feature_explain",
+    "emotion": "professional",
+    "context_tags": ["rivon", "ecommerce"],
+    "memory_flags": { "store_topic": true, "entities": ["catalog_size", "shipping_needed"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Clarifies e-commerce complexity levels and asks scope questions.",
+    "connected_responses": [
+      { "text": "How many products are you selling: a few, dozens, or hundreds?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Do you need shipping/taxes/inventory management, or just checkout?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_business_discovery_001",
+    "topic": "rivon_discovery",
+    "keywords": ["what do you suggest", "what do you recommend", "suggestions", "help me plan", "what should i do"],
+    "response": "My suggestion: we lock in (1) your business type, (2) your main goal, and (3) your best next step (call/form/booking). From that, I’ll generate a page outline and recommend a Rivon plan.",
+    "intent": "guided_planning",
+    "emotion": "supportive",
+    "context_tags": ["rivon", "planning"],
+    "memory_flags": { "store_topic": true, "entities": ["business_type", "site_goal", "cta"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Provides a structured planning approach: business, goal, CTA.",
+    "connected_responses": [
+      { "text": "What kind of business is it?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What’s the #1 goal: leads, bookings, sales, or awareness?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_ai_tasks_001",
+    "topic": "rivon_ai_tasks",
+    "keywords": ["automation", "automate", "workflows", "admin", "intake", "routing", "follow ups", "save time"],
+    "response": "Rivon can help reduce busywork by structuring intake (questions), routing requests, and guiding people to the right action. Think: less back-and-forth, more clarity, smoother handoffs.",
+    "intent": "feature_explain",
+    "emotion": "confident",
+    "context_tags": ["rivon", "automation"],
+    "memory_flags": { "store_topic": true, "entities": ["automation_needs"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Describes automation benefits: intake, routing, clarity.",
+    "connected_responses": [
+      { "text": "What’s the most annoying repetitive question people ask you right now?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Do you want the bot to route to email, booking, or a quote form?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_demo_blueprint_001",
+    "topic": "rivon_demo_blueprint",
+    "keywords": ["make a plan", "blueprint", "outline my site", "site outline", "generate a site plan", "demo plan"],
+    "response": "Let’s do a quick blueprint. Tell me your business type and I’ll outline: homepage sections, recommended pages, and the best chatbot behavior for your visitors.",
+    "intent": "demo_intent",
+    "emotion": "excited",
+    "context_tags": ["rivon", "demo", "planning"],
+    "memory_flags": { "store_topic": true, "entities": ["business_type"], "decay_after": 72, "memory_level": "session" },
+    "semantic_summary": "Offers a fast website blueprint demo.",
+    "connected_responses": [
+      { "text": "What kind of business is it in one sentence?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What’s the main action you want visitors to take?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_content_needed_001",
+    "topic": "rivon_content_needed",
+    "keywords": ["what do you need from me", "what do i need", "what info do you need", "content needed", "assets"],
+    "response": "To build fast, we usually need: your business description, services, any photos/logo, and a clear goal for the site. If you don’t have everything, we can still start and fill gaps as we go.",
+    "intent": "process_info",
+    "emotion": "supportive",
+    "context_tags": ["rivon", "process"],
+    "memory_flags": { "store_topic": true, "entities": ["brand_assets"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Explains needed inputs to build and flexible gap-filling.",
+    "connected_responses": [
+      { "text": "Do you already have a logo and some photos, or should we work from scratch?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What are your top 3 services or offers?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_support_topics_001",
+    "topic": "rivon_support_topics",
+    "keywords": ["faq", "common questions", "what people ask", "customer questions", "support questions"],
+    "response": "If you tell me the top questions your customers ask, I can design the FAQ and the chatbot so visitors get answers instantly — that’s one of the fastest ways to raise conversions.",
+    "intent": "offer_help",
+    "emotion": "confident",
+    "context_tags": ["rivon", "faq", "chatbot"],
+    "memory_flags": { "store_topic": true, "entities": ["faq_list"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Offers to build FAQ + chatbot scripts from common customer questions.",
+    "connected_responses": [
+      { "text": "What are the top 3 questions people ask before buying from you?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Do you want short answers, or more detailed explanations on the site?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_booking_vs_contact_001",
+    "topic": "rivon_cta_choice",
+    "keywords": ["should i do booking", "contact first", "call me", "contact me", "best call to action", "cta"],
+    "response": "Best CTA depends on your business. Booking works when the service is clear; contact-first works when projects vary. Rivon can structure either flow so it feels smooth.",
+    "intent": "planning_help",
+    "emotion": "professional",
+    "context_tags": ["rivon", "cta"],
+    "memory_flags": { "store_topic": true, "entities": ["cta_preference"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Helps choose CTA: booking vs contact-first.",
+    "connected_responses": [
+      { "text": "Is your service standardized, or does every customer need a custom quote?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "How do customers usually buy from you today—call, text, DM, or email?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_pricing_quote_001",
+    "topic": "rivon_quotes",
+    "keywords": ["quote", "estimate", "get a quote", "request a quote", "pricing quote"],
+    "response": "If you want quote requests, the chatbot can ask a few intake questions and then send the lead through a clean form. That way you get better leads with fewer back-and-forth messages.",
+    "intent": "feature_explain",
+    "emotion": "confident",
+    "context_tags": ["rivon", "leads", "quotes"],
+    "memory_flags": { "store_topic": true, "entities": ["intake_fields"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Explains quote request flow with chatbot intake + form.",
+    "connected_responses": [
+      { "text": "What info do you need to give a quote (location, budget, scope, date)?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Do you want quote requests to go to email, CRM, or both?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_social_links_001",
+    "topic": "rivon_social",
+    "keywords": ["instagram", "tiktok", "facebook", "social media", "link my socials", "social links"],
+    "response": "Yep — adding socials is easy, and we can design them so they feel clean and premium instead of cluttered. If you rely on social traffic, we can also structure the site to capture leads from those visitors.",
+    "intent": "feature_explain",
+    "emotion": "professional",
+    "context_tags": ["rivon", "social"],
+    "memory_flags": { "store_topic": true, "entities": ["traffic_source"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Explains socials and social-traffic lead capture structure.",
+    "connected_responses": [
+      { "text": "Which platform brings you the most customers right now?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "Do you want visitors to DM you, book, or submit a form from your site?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_email_capture_001",
+    "topic": "rivon_email_capture",
+    "keywords": ["email", "newsletter", "email list", "capture emails", "sign up", "subscribe"],
+    "response": "If you want an email list, we can add a clean opt-in and have the chatbot invite signups naturally. That’s great for promos, launches, and staying top-of-mind.",
+    "intent": "feature_explain",
+    "emotion": "professional",
+    "context_tags": ["rivon", "email"],
+    "memory_flags": { "store_topic": true, "entities": ["email_marketing_goal"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Explains email list capture and chatbot-supported opt-in.",
+    "connected_responses": [
+      { "text": "Do you want emails for promos, updates, or nurturing leads over time?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What should people get for signing up (discount, guide, updates)?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  },
+  {
+    "id": "rivon_referral_001",
+    "topic": "rivon_referrals",
+    "keywords": ["referrals", "word of mouth", "recommendations", "share", "get more referrals"],
+    "response": "A good site supports referrals by making you look credible instantly and making it easy for people to contact you. Rivon can also add sections that answer the questions referrals usually have.",
+    "intent": "planning_help",
+    "emotion": "professional",
+    "context_tags": ["rivon", "trust"],
+    "memory_flags": { "store_topic": true, "entities": ["referral_source"], "decay_after": 120, "memory_level": "session" },
+    "semantic_summary": "Explains how site supports referrals via credibility and clarity.",
+    "connected_responses": [
+      { "text": "Where do most referrals come from (friends, social, partners)?", "intent": "ask_question", "emotion": "curious" },
+      { "text": "What do referrals usually ask before they buy?", "intent": "ask_question", "emotion": "curious" }
+    ]
+  }
+]

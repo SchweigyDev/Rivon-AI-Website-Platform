@@ -1,0 +1,15 @@
+{
+  "greeting_1": {
+    "Hey there 👋 great seeing you again!": 1.2,
+    "How’ve you been?": 1,
+    "Anything new lately?": 1
+  },
+  "general_0": {
+    "That’s a neat angle 🤔": 1.2,
+    "Want to expand a bit?": 1,
+    "Let’s unpack that thought together.": 1,
+    "You mentioned \"oh no\" — interesting.": 1,
+    "What made you think about that?": 1.2,
+    "I like the way you connect ideas.": 1
+  }
+}

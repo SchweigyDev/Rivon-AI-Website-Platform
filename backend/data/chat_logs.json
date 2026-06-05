@@ -1,0 +1,152 @@
+[
+  {
+    "userRole": "guest",
+    "message": "cost",
+    "reply": "Our pricing varies by plan. Would you like basic, pro, or enterprise details?",
+    "timestamp": "2025-10-14T19:54:31.758Z"
+  },
+  {
+    "userRole": "guest",
+    "message": "price",
+    "reply": "Our pricing varies by plan. Would you like basic, pro, or enterprise details?",
+    "timestamp": "2025-10-14T19:54:39.261Z"
+  },
+  {
+    "userRole": "guest",
+    "message": "good night",
+    "reply": "Good night 🌙 — sleep well!",
+    "timestamp": "2025-10-14T19:54:52.516Z"
+  },
+  {
+    "userRole": "guest",
+    "message": "hello",
+    "reply": "Hi there 👋! How can I help you today?",
+    "timestamp": "2025-10-14T20:00:33.010Z"
+  },
+  {
+    "userRole": "guest",
+    "message": "price",
+    "reply": "Our pricing varies by plan. Would you like basic, pro, or enterprise details?",
+    "timestamp": "2025-10-14T20:00:35.732Z"
+  },
+  {
+    "userRole": "guest",
+    "message": "bye",
+    "reply": "That’s an admin-only command. Please log in as admin to continue.",
+    "timestamp": "2025-10-14T20:00:39.839Z"
+  },
+  {
+    "userRole": "guest",
+    "message": "interesting",
+    "reply": "That’s an admin-only command. Please log in as admin to continue.",
+    "timestamp": "2025-10-14T20:00:54.025Z"
+  },
+  {
+    "userRole": "guest",
+    "message": "admin",
+    "reply": "That’s an admin-only command. Please log in as admin to continue.",
+    "timestamp": "2025-10-14T20:01:02.934Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "bye",
+    "reply": "I'm not sure about that yet 🤔. Would you like me to ask ChatGPT for you?",
+    "timestamp": "2025-10-14T20:01:10.797Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "hello",
+    "reply": "Hey there 👋! Great to see you again.",
+    "timestamp": "2025-10-15T19:34:39.589Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "greetings",
+    "reply": "Greetings 🌍! How can I make your day better?",
+    "timestamp": "2025-10-15T19:34:42.740Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "what up",
+    "reply": "I’m not sure yet 🤔.",
+    "timestamp": "2025-10-15T19:34:44.973Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "the moon is cool",
+    "reply": "The Moon pulls oceans and poetry alike 🌕.",
+    "timestamp": "2025-10-15T19:34:50.833Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "very cool",
+    "reply": "I’m not sure yet 🤔.",
+    "timestamp": "2025-10-15T19:34:57.065Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "hello",
+    "reply": "Hey there 👋 it’s really nice to see you!",
+    "timestamp": "2025-10-16T01:40:08.507Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "how are you doing",
+    "reply": "Yo 😎 what’s happening?",
+    "timestamp": "2025-10-16T01:40:16.734Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "hello",
+    "reply": "Hey there 👋 it’s really nice to see you!",
+    "timestamp": "2025-10-16T01:40:26.666Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "hola",
+    "reply": "¡Hola! 👋 ¿Cómo estás?",
+    "timestamp": "2025-10-16T11:50:50.484Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "hello",
+    "reply": "Hey there 👋 it’s great to see you!",
+    "timestamp": "2025-10-16T11:50:59.418Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "greetings",
+    "reply": "Greetings, traveler 🌐",
+    "timestamp": "2025-10-16T11:51:03.745Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "sup bro how are you",
+    "reply": "Hey 😄 not much, just vibing in the cloud.",
+    "timestamp": "2025-10-16T11:51:13.737Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "sounds sweet man",
+    "reply": "Sound is invisible architecture that moves us 🎶.",
+    "timestamp": "2025-10-16T11:51:23.826Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "your awesome dude",
+    "reply": "Yo 😎 what’s happening?",
+    "timestamp": "2025-10-16T11:51:36.705Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "happening",
+    "reply": "Mobile gaming: boredom’s worst enemy 📱.",
+    "timestamp": "2025-10-16T11:51:44.993Z"
+  },
+  {
+    "userRole": "admin",
+    "message": "always an answer?",
+    "reply": "I didn’t quite get that 🤔 Want me to ask GPT for more context?",
+    "timestamp": "2025-10-16T11:51:58.309Z"
+  }
+]

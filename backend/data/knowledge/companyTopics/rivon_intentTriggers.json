@@ -1,0 +1,47 @@
+[
+  {
+    "id": "rivon_intent_pricing_001",
+    "topic": "rivon_intent_pricing",
+    "keywords": ["how much", "pricing", "cost", "price", "packages", "tiers", "budget"],
+    "response": "Totally — Rivon has Basic, Standard, and Premium options. If you tell me your business type and the #1 goal (leads, bookings, sales, awareness), I can recommend the best fit in one minute.",
+    "intent": "pricing_intent",
+    "emotion": "confident",
+    "context_tags": ["rivon", "pricing", "intent"],
+    "memory_flags": { "store_topic": true, "entities": ["budget_range", "business_type", "site_goal"], "decay_after": 72, "memory_level": "session" },
+    "semantic_summary": "User asked about pricing/cost; bot offers quick recommendation flow.",
+    "connected_responses": [
+      { "text": "What kind of business is this for?", "intent": "ask_question", "emotion": "curious", "context_tags": ["qualification"] },
+      { "text": "What’s the #1 thing you want the site to do?", "intent": "ask_question", "emotion": "curious", "context_tags": ["qualification"] }
+    ]
+  },
+  {
+    "id": "rivon_intent_chatbots_001",
+    "topic": "rivon_intent_chatbots",
+    "keywords": ["chatbot", "chatbots", "ai assistant", "website assistant", "support bot", "lead capture bot"],
+    "response": "Yes — Rivon can add a website assistant that answers questions, guides visitors, and captures leads without feeling spammy. What do you want your chatbot to do most: FAQs, lead capture, bookings, or support routing?",
+    "intent": "chatbot_intent",
+    "emotion": "professional",
+    "context_tags": ["rivon", "chatbots", "intent"],
+    "memory_flags": { "store_topic": true, "entities": ["bot_goal"], "decay_after": 72, "memory_level": "session" },
+    "semantic_summary": "User asked about chatbots; bot asks what outcome they want.",
+    "connected_responses": [
+      { "text": "Should the bot feel more professional or more friendly?", "intent": "ask_question", "emotion": "curious", "context_tags": ["tone"] },
+      { "text": "Do you want it to remember basics like company name and services during the chat?", "intent": "ask_question", "emotion": "curious", "context_tags": ["memory"] }
+    ]
+  },
+  {
+    "id": "rivon_intent_demo_001",
+    "topic": "rivon_intent_demo",
+    "keywords": ["show me", "demo", "prove it", "what can it do", "examples", "impressive", "try it"],
+    "response": "Want a quick wow-demo? Tell me your business type in one sentence and I’ll generate a clean homepage outline + recommended pages instantly.",
+    "intent": "demo_intent",
+    "emotion": "excited",
+    "context_tags": ["rivon", "demo", "intent"],
+    "memory_flags": { "store_topic": true, "entities": ["business_type"], "decay_after": 48, "memory_level": "session" },
+    "semantic_summary": "User wants a demo; bot offers instant website blueprint.",
+    "connected_responses": [
+      { "text": "What kind of business is it?", "intent": "ask_question", "emotion": "curious", "context_tags": ["qualification"] },
+      { "text": "Is your main goal leads, bookings, sales, or awareness?", "intent": "ask_question", "emotion": "curious", "context_tags": ["qualification"] }
+    ]
+  }
+]

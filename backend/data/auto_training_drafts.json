@@ -1,0 +1,19 @@
+[
+  {
+    "id": "cf0c7467668c",
+    "topic": "auto_trained",
+    "keywords": [
+      "how do i reset password"
+    ],
+    "response": "Placeholder response for \"how do i reset password\" (3× seen).",
+    "intent": "auto_draft",
+    "emotion": "neutral",
+    "context_tags": [
+      "auto_generated"
+    ],
+    "training_meta": {
+      "occurrences": 3,
+      "last_seen": "2025-10-17T16:46:58.188Z"
+    }
+  }
+]

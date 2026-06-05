@@ -1,0 +1,513 @@
+[
+  {
+    "id": "rivon_overview_001",
+    "topic": "rivon_overview",
+    "keywords": [
+      "what is rivon",
+      "about rivon",
+      "tell me about rivon",
+      "what do you do",
+      "what does rivon do",
+      "what this site does",
+      "what this company does"
+    ],
+    "response": "Rivon builds modern, AI-powered websites. We combine clean design with smart tools like chatbots, automation, and analytics so your site doesn’t just look good — it actively helps your business.",
+    "intent": "company_info",
+    "emotion": "professional",
+    "context_tags": ["rivon", "overview", "services"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["business_type"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains what Rivon is and what it builds.",
+    "connected_responses": [
+      {
+        "text": "What kind of business is this for? I can tailor a quick site plan.",
+        "intent": "ask_question",
+        "emotion": "curious",
+        "context_tags": ["qualification"]
+      },
+      {
+        "text": "Are you starting from scratch or upgrading an existing website?",
+        "intent": "ask_question",
+        "emotion": "curious",
+        "context_tags": ["qualification"]
+      }
+    ]
+  },
+  {
+    "id": "rivon_help_001",
+    "topic": "rivon_help",
+    "keywords": [
+      "how could rivon help me",
+      "how can rivon help",
+      "what can rivon do for me",
+      "help my business",
+      "help me grow",
+      "get more customers"
+    ],
+    "response": "Rivon helps by turning your website into a system: clear pages that explain what you do, strong calls-to-action, and an AI assistant that answers questions and guides visitors so you get more leads and clarity.",
+    "intent": "value_explain",
+    "emotion": "confident",
+    "context_tags": ["rivon", "value"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["site_goal", "business_type"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains Rivon’s value as a website + assistant system.",
+    "connected_responses": [
+      {
+        "text": "What’s your #1 goal for the site: leads, bookings, sales, or awareness?",
+        "intent": "ask_question",
+        "emotion": "curious",
+        "context_tags": ["qualification"]
+      },
+      {
+        "text": "If you tell me what you do, I can suggest the best pages and features in 60 seconds.",
+        "intent": "offer_help",
+        "emotion": "supportive",
+        "context_tags": ["demo"]
+      }
+    ]
+  },
+  {
+    "id": "rivon_websites_001",
+    "topic": "rivon_websites",
+    "keywords": [
+      "what kind of websites does rivon make",
+      "what websites do you build",
+      "types of websites",
+      "what do you build",
+      "what kind of sites"
+    ],
+    "response": "Rivon builds modern business websites, landing pages, service sites, and branded sites designed to convert. We can also build more advanced setups like multi-page funnels, booking flows, and e-commerce depending on the plan.",
+    "intent": "company_info",
+    "emotion": "professional",
+    "context_tags": ["rivon", "websites"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["business_type"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains types of sites Rivon builds.",
+    "connected_responses": [
+      {
+        "text": "What kind of site are you thinking: simple brochure, lead-gen, booking, or e-commerce?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      },
+      {
+        "text": "Do you already have examples of websites you like, or should we design the vibe from scratch?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  },
+  {
+    "id": "rivon_chatbot_001",
+    "topic": "rivon_chatbot_capabilities",
+    "keywords": [
+      "what can the chatbot do",
+      "what does the chatbot do",
+      "what can your chatbot do",
+      "ai chatbot",
+      "website assistant",
+      "assistant on my website"
+    ],
+    "response": "The Rivon chatbot can answer FAQs, explain services, guide visitors to the right page, and capture leads (name/company/email) without feeling robotic. It’s designed to feel natural while still being useful and structured.",
+    "intent": "feature_explain",
+    "emotion": "confident",
+    "context_tags": ["rivon", "chatbot", "features"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["bot_goal", "tone_preference"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains chatbot capabilities: FAQs, routing, lead capture.",
+    "connected_responses": [
+      {
+        "text": "What would you want it to do most: FAQs, lead capture, bookings, or support routing?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      },
+      {
+        "text": "Should it feel more professional or more friendly?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  },
+  {
+    "id": "rivon_admin_tasks_001",
+    "topic": "rivon_admin_tasks",
+    "keywords": [
+      "administration tasks",
+      "admin tasks",
+      "can it help with admin",
+      "can it handle scheduling",
+      "can it handle forms",
+      "can it help with intake",
+      "can it do intake",
+      "can it automate emails",
+      "can it collect information"
+    ],
+    "response": "Yes — Rivon chatbots can help with admin-style tasks like intake questions, routing requests, collecting structured info (like project details), and guiding people to booking/contact steps. The exact automation depends on what you want it to connect to.",
+    "intent": "feature_explain",
+    "emotion": "professional",
+    "context_tags": ["rivon", "chatbot", "automation"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["automation_needs"],
+      "decay_after": 96,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains admin-type chatbot uses: intake, routing, structured capture.",
+    "connected_responses": [
+      {
+        "text": "What admin task would help you most: intake, scheduling, quoting, or support sorting?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      },
+      {
+        "text": "Do you want the bot to collect details first and then hand off to a person?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  },
+  {
+    "id": "rivon_why_choose_001",
+    "topic": "rivon_why_choose",
+    "keywords": [
+      "why should i use rivon",
+      "why rivon",
+      "why choose rivon",
+      "what makes rivon better",
+      "better than competition",
+      "why not someone else",
+      "why not a freelancer"
+    ],
+    "response": "Rivon is built to feel premium *and* practical: clean design, fast performance, and an AI assistant that’s actually structured. It’s not just a pretty site — it’s a site that explains, guides, and captures interest intelligently.",
+    "intent": "differentiation",
+    "emotion": "confident",
+    "context_tags": ["rivon", "differentiation"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["business_type", "site_goal"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains Rivon differentiation: premium + structured AI assistant.",
+    "connected_responses": [
+      {
+        "text": "If you tell me your business, I can show you the exact structure I’d recommend (pages + bot behavior).",
+        "intent": "offer_help",
+        "emotion": "supportive",
+        "context_tags": ["demo"]
+      },
+      {
+        "text": "What matters more to you: premium look, speed to launch, or maximizing leads?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  },
+  {
+    "id": "rivon_human_contact_001",
+    "topic": "rivon_human_contact",
+    "keywords": [
+      "talk to a person",
+      "talk to someone",
+      "contact a person",
+      "human",
+      "call",
+      "email you",
+      "how do i contact",
+      "get in touch",
+      "contact rivon"
+    ],
+    "response": "If you want to talk to a person at Rivon, the simplest path is the Contact section — you can leave your email and a short note about what you’re building, and we’ll follow up. If you’d like, tell me what you need and I’ll help you write the message.",
+    "intent": "handoff",
+    "emotion": "supportive",
+    "context_tags": ["rivon", "contact", "handoff"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["email", "project_summary"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains how to talk to a person and offers help crafting a message.",
+    "connected_responses": [
+      {
+        "text": "What’s your business type and what do you want the site to do?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      },
+      {
+        "text": "If you want, share an email and I’ll attach it to your site plan (optional).",
+        "intent": "ask_question",
+        "emotion": "neutral"
+      }
+    ]
+  },
+  {
+    "id": "rivon_expectations_001",
+    "topic": "rivon_expectations",
+    "keywords": [
+      "what can i expect from rivon",
+      "what should i expect",
+      "how does it work",
+      "process",
+      "timeline",
+      "steps",
+      "what happens next"
+    ],
+    "response": "A typical Rivon build starts with quick discovery (what you do + goals), then we structure pages, design the look, implement features (including AI if wanted), and launch. After launch, we can keep improving with updates, content, and optimization if you want ongoing support.",
+    "intent": "process_info",
+    "emotion": "professional",
+    "context_tags": ["rivon", "process"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["timeline_preference"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains high-level build process and optional ongoing support.",
+    "connected_responses": [
+      {
+        "text": "Do you have a deadline you’re aiming for?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      },
+      {
+        "text": "Are you starting from scratch or improving an existing site?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  },
+  {
+    "id": "rivon_pricing_001",
+    "topic": "rivon_pricing",
+    "keywords": [
+      "pricing",
+      "how much",
+      "cost",
+      "packages",
+      "plans",
+      "price",
+      "budget",
+      "tiers"
+    ],
+    "response": "Rivon offers three main tiers: Basic, Standard, and Premium. Basic typically starts around $2,000–$4,000, Standard is roughly $5,000–$8,000, and Premium projects usually start at $10,000+ depending on scope and AI features.",
+    "intent": "pricing_info",
+    "emotion": "professional",
+    "context_tags": ["rivon", "pricing"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["budget_range"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains Rivon pricing bands and tiers.",
+    "connected_responses": [
+      {
+        "text": "Do you have a rough budget in mind, or are you just exploring right now?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      },
+      {
+        "text": "What kind of site do you want (simple, lead-gen, booking, or e-commerce)? That will change the tier.",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  },
+  {
+    "id": "rivon_best_plan_001",
+    "topic": "rivon_best_plan",
+    "keywords": [
+      "which plan would work best",
+      "which plan is best",
+      "what plan should i get",
+      "recommend a plan",
+      "what package do i need",
+      "which tier"
+    ],
+    "response": "I can recommend the best Rivon tier fast — it depends on how many pages you need and how “smart” you want the site to be (basic site vs AI lead capture and automation).",
+    "intent": "plan_recommendation",
+    "emotion": "confident",
+    "context_tags": ["rivon", "pricing", "recommendation"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["business_type", "site_goal", "complexity"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains plan recommendation factors.",
+    "connected_responses": [
+      {
+        "text": "What kind of business is it and what’s the #1 goal for the website?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      },
+      {
+        "text": "Do you need anything advanced like bookings, payments, memberships, or e-commerce?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  },
+  {
+    "id": "rivon_ecommerce_001",
+    "topic": "rivon_ecommerce",
+    "keywords": [
+      "ecommerce",
+      "e-commerce",
+      "online store",
+      "sell products",
+      "checkout",
+      "cart",
+      "shop",
+      "shopify",
+      "payments"
+    ],
+    "response": "Yes — Rivon can build e-commerce style sites depending on scope. The key question is what you’re selling and what kind of checkout you want (simple payments vs full product catalog with shipping, variants, and inventory).",
+    "intent": "feature_explain",
+    "emotion": "professional",
+    "context_tags": ["rivon", "ecommerce"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["product_type", "checkout_type"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains e-commerce support and asks scope questions.",
+    "connected_responses": [
+      {
+        "text": "Are you selling a few items or a full catalog?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      },
+      {
+        "text": "Do you need shipping/taxes/inventory, or just simple checkout links?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  },
+  {
+    "id": "rivon_dont_know_001",
+    "topic": "rivon_uncertainty",
+    "keywords": [
+      "i dont know what i want",
+      "i don't know what i want",
+      "not sure what i need",
+      "i have no idea",
+      "help me decide",
+      "i dont know what to build",
+      "i'm not sure"
+    ],
+    "response": "That’s totally normal. If you tell me what you do and who your customers are, I can generate a clean site structure (pages + sections) and suggest a starting plan — no pressure, just clarity.",
+    "intent": "guided_planning",
+    "emotion": "supportive",
+    "context_tags": ["rivon", "planning"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["business_type", "audience", "site_goal"],
+      "decay_after": 96,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Handles uncertainty and offers structured planning help.",
+    "connected_responses": [
+      {
+        "text": "What kind of business is it in one sentence?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      },
+      {
+        "text": "What’s the main outcome you want from the site (leads, bookings, sales, awareness)?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  },
+  {
+    "id": "rivon_existing_site_001",
+    "topic": "rivon_existing_site",
+    "keywords": [
+      "i already have a website",
+      "existing website",
+      "upgrade my site",
+      "redo my website",
+      "revamp",
+      "my site is old",
+      "my site is slow",
+      "my site looks bad"
+    ],
+    "response": "Absolutely — upgrading an existing site is common. We can modernize the design, speed, structure, and add AI features like a helpful website assistant. The first step is figuring out what’s not working: design, speed, clarity, or conversions.",
+    "intent": "site_upgrade",
+    "emotion": "professional",
+    "context_tags": ["rivon", "upgrade"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["pain_point"],
+      "decay_after": 72,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains upgrading existing site and asks what’s wrong.",
+    "connected_responses": [
+      {
+        "text": "What’s the biggest issue right now: looks, speed, or not getting leads?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      },
+      {
+        "text": "Do you want to keep your current domain and content, or start fresh?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  },
+  {
+    "id": "rivon_seo_001",
+    "topic": "rivon_seo",
+    "keywords": [
+      "seo",
+      "google",
+      "rank",
+      "ranking",
+      "search results",
+      "get found online"
+    ],
+    "response": "Rivon builds with SEO-friendly structure (fast loading, clean headings, clear page hierarchy). If you want stronger SEO, we can also plan pages around what customers search for and build content that matches intent.",
+    "intent": "feature_explain",
+    "emotion": "professional",
+    "context_tags": ["rivon", "seo"],
+    "memory_flags": {
+      "store_topic": true,
+      "entities": ["service_area", "target_keywords"],
+      "decay_after": 96,
+      "memory_level": "session"
+    },
+    "semantic_summary": "Explains SEO basics and content planning.",
+    "connected_responses": [
+      {
+        "text": "What city/region do you serve, and what’s your main service or product?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      },
+      {
+        "text": "Do you want SEO mainly for local leads, or broader national reach?",
+        "intent": "ask_question",
+        "emotion": "curious"
+      }
+    ]
+  }
+]

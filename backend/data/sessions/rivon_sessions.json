@@ -1,0 +1,38 @@
+{
+  "102a5027-283e-464f-bf2e-424d7e35f28e": {
+    "mode": "lead_capture",
+    "lastQuestion": "",
+    "leadId": "lead_1768503315501_23469",
+    "businessType": "toy store",
+    "offering": "",
+    "goals": "leads + sales + bookings",
+    "ecommerceMode": "ecommerce",
+    "productCount": "200+",
+    "personalization": "yes",
+    "email": "mschweighauser12@gmail.com",
+    "locks": {
+      "businessType": true,
+      "goals": true,
+      "ecommerceMode": true,
+      "productCount": true,
+      "personalization": true,
+      "email": true,
+      "topOffer": true,
+      "idealCustomer": true,
+      "siteType": true,
+      "premiumChatbot": true,
+      "budget": true,
+      "timeline": true
+    },
+    "lastTouchedAt": 1780664626822,
+    "emailConfirmed": true,
+    "leadNotified": true,
+    "topOffer": "recommend one",
+    "idealCustomer": "recommend one",
+    "siteType": "full_website",
+    "premiumChatbot": "yes",
+    "budget": "high",
+    "timeline": "asap",
+    "leadName": "Michael"
+  }
+}
