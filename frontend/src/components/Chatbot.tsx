@@ -35,7 +35,8 @@ function getVisitorId(): string {
     return id;
 }
 
-const API_BASE = "http://localhost:5000";
+const API_BASE =
+    import.meta.env.PROD ? "/_/backend" : "http://localhost:5000";
 
 function stripBotPrefix(s: string) {
     return String(s || "").replace(/^Bot:\s*/i, "");
