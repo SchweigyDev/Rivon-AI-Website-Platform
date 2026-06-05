@@ -73,17 +73,20 @@ const Contact = () => {
         color: "#9ca3af",
     };
 
-    const cardWrapperStyle = {
+    const cardWrapperStyle: React.CSSProperties = {
         marginTop: 40,
         display: "grid",
         gridTemplateColumns: "minmax(0, 1.2fr) minmax(0, 1fr)",
         gap: 32,
         alignItems: "stretch",
-    } as const;
+    };
 
-    const cardWrapperStacked: typeof cardWrapperStyle = {
-        ...cardWrapperStyle,
+    const cardWrapperStacked: React.CSSProperties = {
+        marginTop: 40,
+        display: "grid",
         gridTemplateColumns: "minmax(0, 1fr)",
+        gap: 32,
+        alignItems: "stretch",
     };
 
     // Very simple responsive check
@@ -215,15 +218,15 @@ const Contact = () => {
         boxShadow: "0 12px 26px rgba(8,47,73,0.9)",
     };
 
-    const helperRowStyle = {
-        marginTop: 10,
-        fontSize: "0.78rem",
-        color: "#9ca3af",
-        display: "flex",
-        justifyContent: "space-between",
-        gap: 12,
-        flexWrap: "wrap" as const,
-    };
+    // const helperRowStyle = {
+    //     marginTop: 10,
+    //     fontSize: "0.78rem",
+    //     color: "#9ca3af",
+    //     display: "flex",
+    //     justifyContent: "space-between",
+    //     gap: 12,
+    //     flexWrap: "wrap" as const,
+    // };
 
     const statusStyleBase = {
         marginTop: 10,

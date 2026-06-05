@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FiUsers, FiCpu, FiClock, FiStar } from "react-icons/fi";
+import { FiUsers, FiCpu, FiClock } from "react-icons/fi";
 
 const reasons = [
     {
