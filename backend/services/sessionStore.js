@@ -1,16 +1,27 @@
 import fs from "fs";
 import path from "path";
 
-const sessionsPath = path.resolve("./data/sessions/rivon_sessions.json");
+const isVercel = Boolean(process.env.VERCEL);
 const DEBUG = true;
 
+const sessionsPath = path.resolve("./data/sessions/rivon_sessions.json");
+
+// Used on Vercel because serverless functions cannot reliably write to project files
+let memorySessions = {};
+
 function ensureSessionsFile() {
+    if (isVercel) return;
+
     const dir = path.dirname(sessionsPath);
     if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
-    if (!fs.existsSync(sessionsPath)) fs.writeFileSync(sessionsPath, JSON.stringify({}, null, 2), "utf8");
+    if (!fs.existsSync(sessionsPath)) {
+        fs.writeFileSync(sessionsPath, JSON.stringify({}, null, 2), "utf8");
+    }
 }
 
 export function loadAllSessions() {
+    if (isVercel) return memorySessions;
+
     ensureSessionsFile();
     try {
         return JSON.parse(fs.readFileSync(sessionsPath, "utf8")) || {};
@@ -20,6 +31,11 @@ export function loadAllSessions() {
 }
 
 export function saveAllSessions(obj) {
+    if (isVercel) {
+        memorySessions = obj || {};
+        return;
+    }
+
     ensureSessionsFile();
     fs.writeFileSync(sessionsPath, JSON.stringify(obj, null, 2), "utf8");
 }
